@@ -1778,3 +1778,22 @@ ul {
     }
 
 }
+
+/* CORRECCIÓN DE EMERGENCIA: mantener visible el contenido */
+.reveal {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
+}
+
+.reveal.visible {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+/* Evitar que el contenido principal quede oculto */
+main,
+main section,
+#contenido {
+    visibility: visible;
+}
