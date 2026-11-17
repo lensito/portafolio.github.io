@@ -1,339 +1,861 @@
- 
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="Portafolio profesional de Leisi Valencio. Estudiante de ciberseguridad y desarrollador de software.">
+    <title>Leisi Valencio | Cybersecurity & Software Development</title>
+
+    <meta name="description"
+          content="Portafolio profesional de Leisi Valencio. Estudiante de Ciberseguridad y desarrollador de software. Proyectos, laboratorios y tecnología.">
+
     <meta name="author" content="Leisi Valencio">
     <meta name="theme-color" content="#080d17">
+    <meta name="robots" content="index, follow">
 
-    <title>Leisi A. Valencio | Cybersecurity & Software</title>
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Leisi Valencio | Cybersecurity">
+    <meta property="og:description"
+          content="Ciberseguridad, hacking ético y desarrollo de software.">
+    <meta property="og:url" content="https://lensito.github.io">
 
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="styles.css">
+
     <script src="script.js" defer></script>
 </head>
 
 <body>
 
-<header class="header">
-    <nav class="navbar container">
-        <a href="#inicio" class="logo">
-            <span class="logo-symbol">&lt;/&gt;</span>
-            LEISI<span class="accent">.</span>
-        </a>
+    <a class="skip-link" href="#contenido">
+        Saltar al contenido
+    </a>
 
-        <button class="menu-toggle" id="menuToggle"
-                aria-label="Abrir menú" aria-expanded="false">
-            ☰
-        </button>
+    <!-- BARRA DE NAVEGACIÓN -->
 
-        <ul class="nav-links" id="navLinks">
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#sobre-mi">Sobre mí</a></li>
-            <li><a href="#habilidades">Habilidades</a></li>
-            <li><a href="#proyectos">Proyectos</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-        </ul>
-    </nav>
-</header>
+    <header class="site-header" id="header">
+        <nav class="navbar container" aria-label="Navegación principal">
 
-<main>
-
-    <!-- INICIO -->
-    <section class="hero container" id="inicio">
-        <div class="hero-content">
-            <span class="status">
-                <span class="status-dot"></span>
-                Construyendo mi futuro en tecnología
-            </span>
-
-            <p class="eyebrow">HOLA, SOY</p>
-
-            <h1>
-                LEISI<br>
-                <span class="accent">VALENCIO</span>
-            </h1>
-
-            <h2>Cybersecurity Student & Software Developer</h2>
-
-            <p class="hero-description">
-                Apasionado por la ciberseguridad, el hacking ético
-                y el desarrollo de soluciones tecnológicas.
-                Aprendiendo, investigando y construyendo proyectos
-                que transforman ideas en soluciones.
-            </p>
-
-            <div class="hero-buttons">
-                <a href="#proyectos" class="btn btn-primary">
-                    Explorar proyectos
-                </a>
-
-                <a href="https://github.com/leisi"
-                   target="_blank" rel="noopener noreferrer"
-                   class="btn btn-outline">
-                    Mi GitHub ↗
-                </a>
-            </div>
-
-            <div class="social-links">
-                <a href="https://github.com/leisi"
-                   target="_blank" rel="noopener noreferrer">GitHub</a>
-                <span> / </span>
-                <a href="#contacto">Contacto</a>
-            </div>
-        </div>
-
-        <div class="terminal">
-            <div class="terminal-header">
-                <span></span><span></span><span></span>
-                <p>leisi@portfolio:~</p>
-            </div>
-
-            <div class="terminal-body">
-                <p><span class="terminal-green">leisi@cyber</span>:~$ whoami</p>
-                <h3>Leisi Valencio</h3>
-
-                <p><span class="terminal-green">leisi@cyber</span>:~$ interests</p>
-                <p class="terminal-output">
-                    [ Cybersecurity ]<br>
-                    [ Ethical Hacking ]<br>
-                    [ Software Development ]<br>
-                    [ Technology ]
-                </p>
-
-                <p><span class="terminal-green">leisi@cyber</span>:~$ status</p>
-                <p class="terminal-output">Learning & Building...</p>
-
-                <p><span class="terminal-green">leisi@cyber</span>:~$ <span class="cursor">_</span></p>
-            </div>
-        </div>
-    </section>
-
-    <!-- SOBRE MI -->
-    <section class="section container" id="sobre-mi">
-        <div class="section-heading">
-            <span class="eyebrow">01 / PRESENTACIÓN</span>
-            <h2>Sobre <span class="accent">mí</span></h2>
-        </div>
-
-        <div class="about-card">
-            <p>
-                Soy <strong>Leisi A. Valencio</strong>, estudiante de
-                Ciberseguridad y entusiasta del desarrollo de software.
-            </p>
-
-            <p>
-                Me interesa comprender cómo funcionan los sistemas,
-                identificar vulnerabilidades, aprender sobre protección
-                de infraestructuras tecnológicas y desarrollar aplicaciones.
-            </p>
-
-            <p>
-                Este portafolio reúne mis proyectos, laboratorios,
-                investigaciones y avances durante mi formación profesional.
-            </p>
-        </div>
-    </section>
-
-    <!-- HABILIDADES -->
-    <section class="section container" id="habilidades">
-        <div class="section-heading">
-            <span class="eyebrow">02 / TECNOLOGÍAS</span>
-            <h2>Mis <span class="accent">habilidades</span></h2>
-            <p>Herramientas y tecnologías que utilizo o estoy aprendiendo.</p>
-        </div>
-
-        <div class="skills-grid">
-            <article class="skill-card">
-                <span class="skill-icon">🔐</span>
-                <h3>Ciberseguridad</h3>
-                <p>Seguridad informática, hacking ético y laboratorios.</p>
-            </article>
-
-            <article class="skill-card">
-                <span class="skill-icon">💻</span>
-                <h3>Programación</h3>
-                <p>C#, Python, HTML, CSS y JavaScript.</p>
-            </article>
-
-            <article class="skill-card">
-                <span class="skill-icon">🗄️</span>
-                <h3>Bases de datos</h3>
-                <p>SQL Server y gestión de información.</p>
-            </article>
-
-            <article class="skill-card">
-                <span class="skill-icon">🐧</span>
-                <h3>Sistemas</h3>
-                <p>Linux, terminal y administración de sistemas.</p>
-            </article>
-
-            <article class="skill-card">
-                <span class="skill-icon">🌐</span>
-                <h3>Redes</h3>
-                <p>Fundamentos de redes y comunicaciones.</p>
-            </article>
-
-            <article class="skill-card">
-                <span class="skill-icon">⚙️</span>
-                <h3>Herramientas</h3>
-                <p>Git, GitHub y automatización.</p>
-            </article>
-        </div>
-    </section>
-
-    <!-- PROYECTOS -->
-    <section class="section container" id="proyectos">
-        <div class="section-heading">
-            <span class="eyebrow">03 / PORTAFOLIO</span>
-            <h2>Mis <span class="accent">proyectos</span></h2>
-            <p>Aplicaciones, investigaciones y desarrollos tecnológicos.</p>
-        </div>
-
-        
-<div class="project-filters" aria-label="Filtrar proyectos">
-    <button class="filter-btn active" data-filter="all">
-        Todos
-    </button>
-
-    <button class="filter-btn" data-filter="software">
-        Software
-    </button>
-
-    <button class="filter-btn" data-filter="cybersecurity">
-        Ciberseguridad
-    </button>
-
-    <button class="filter-btn" data-filter="ctf">
-        CTF
-    </button>
-</div>
-
-        
-        <div class="projects-grid">
-
-            <article class="project-card" data-category="software">
-                <div class="project-top">
-                    <span class="project-icon">🦷</span>
-                    <span class="project-status">En desarrollo</span>
-                </div>
-
-                <h3>LV DENTAL SOFT</h3>
-
-                <p>
-                    Sistema de gestión odontológica desarrollado con
-                    C#, ASP.NET Core y SQL Server.
-                </p>
-
-                <div class="tags">
-                    <span>C#</span>
-                    <span>ASP.NET Core</span>
-                    <span>SQL Server</span>
-                </div>
-
-                <a href="https://github.com/leisi"
-                   target="_blank" rel="noopener noreferrer">
-                    Ver en GitHub ↗
-                </a>
-            </article>
-
-            <article class="project-card" data-category="cybersecurity">
-                <div class="project-top">
-                    <span class="project-icon">🛡️</span>
-                    <span class="project-status">En construcción</span>
-                </div>
-
-                <h3>Cybersecurity Labs</h3>
-
-                <p>
-                    Documentación de laboratorios, prácticas y
-                    aprendizaje de ciberseguridad.
-                </p>
-
-                <div class="tags">
-                    <span>Linux</span>
-                    <span>Security</span>
-                    <span>Labs</span>
-                </div>
-
-                <a href="https://github.com/leisi"
-                   target="_blank" rel="noopener noreferrer">
-                    Ver en GitHub ↗
-                </a>
-            </article>
-
-            <article class="project-card" data-category="ctf">
-                <div class="project-top">
-                    <span class="project-icon">🎯</span>
-                    <span class="project-status">En construcción</span>
-                </div>
-
-                <h3>CTF Write-ups</h3>
-
-                <p>
-                    Registro de retos CTF, metodologías, herramientas
-                    y aprendizajes técnicos.
-                </p>
-
-                <div class="tags">
-                    <span>CTF</span>
-                    <span>Ethical Hacking</span>
-                    <span>Research</span>
-                </div>
-
-                <a href="https://github.com/leisi"
-                   target="_blank" rel="noopener noreferrer">
-                    Ver en GitHub ↗
-                </a>
-            </article>
-
-        </div>
-    </section>
-
-    <!-- OBJETIVO -->
-    <section class="section container">
-        <div class="objective-card">
-            <span class="eyebrow">04 / MI FILOSOFÍA</span>
-            <h2>Aprender. Practicar. <span class="accent">Construir.</span></h2>
-            <p>
-                Cada proyecto representa una oportunidad para aprender,
-                experimentar y desarrollar nuevas habilidades.
-            </p>
-        </div>
-    </section>
-
-    <!-- CONTACTO -->
-    <section class="section container" id="contacto">
-        <div class="section-heading">
-            <span class="eyebrow">05 / CONECTEMOS</span>
-            <h2>Contacto <span class="accent">profesional</span></h2>
-            <p>Conoce mis proyectos y sígueme en mi camino tecnológico.</p>
-        </div>
-
-        <div class="contact-card">
-            <a href="https://github.com/leisi"
-               target="_blank" rel="noopener noreferrer">
-                <span>GitHub</span>
-                <strong>@leisi ↗</strong>
+            <a href="#inicio" class="brand" aria-label="Leisi Valencio, inicio">
+                <span class="brand-icon">&lt;/&gt;</span>
+                <span>LEISI<span class="text-accent">.</span></span>
             </a>
 
-            <a href="https://www.linkedin.com/"
-               target="_blank" rel="noopener noreferrer">
-                <span>LinkedIn</span>
-                <strong>Mi perfil profesional ↗</strong>
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                type="button"
+                aria-label="Abrir menú"
+                aria-expanded="false"
+                aria-controls="navLinks">
+
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#inicio" class="nav-link active">Inicio</a></li>
+                <li><a href="#sobre-mi" class="nav-link">Sobre mí</a></li>
+                <li><a href="#especialidades" class="nav-link">Especialidades</a></li>
+                <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+                <li><a href="#formacion" class="nav-link">Formación</a></li>
+                <li><a href="#contacto" class="nav-link nav-contact">Contacto</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main id="contenido">
+
+        <!-- HERO / PORTADA -->
+
+        <section class="hero section-anchor" id="inicio">
+
+            <div class="hero-grid"></div>
+            <div class="hero-glow hero-glow-one"></div>
+            <div class="hero-glow hero-glow-two"></div>
+
+            <div class="container hero-container">
+
+                <div class="hero-content reveal">
+
+                    <div class="availability">
+                        <span class="availability-dot"></span>
+                        <span>ESTUDIANDO · CREANDO · EVOLUCIONANDO</span>
+                    </div>
+
+                    <p class="hero-intro">
+                        HOLA, SOY
+                    </p>
+
+                    <h1>
+                        LEISI<br>
+                        <span class="gradient-text">VALENCIO.</span>
+                    </h1>
+
+                    <div class="hero-role">
+                        <span class="role-prefix">></span>
+                        <span id="typingText">Estudiante de Ciberseguridad</span>
+                        <span class="typing-cursor">|</span>
+                    </div>
+
+                    <p class="hero-description">
+                        Me apasiona la tecnología, la ciberseguridad
+                        y el desarrollo de software. Exploro, aprendo
+                        y construyo soluciones tecnológicas mientras
+                        desarrollo mis habilidades profesionales.
+                    </p>
+
+                    <div class="hero-actions">
+
+                        <a href="#proyectos" class="btn btn-primary">
+                            Explorar proyectos
+                            <span aria-hidden="true">↗</span>
+                        </a>
+
+                        <a
+                            href="https://github.com/lensito"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="btn btn-secondary">
+
+                            <span class="github-symbol" aria-hidden="true">GH</span>
+                            Visitar GitHub
+                        </a>
+
+                    </div>
+
+                    <div class="hero-social">
+                        <span>ENCUÉNTRAME EN</span>
+
+                        <a href="https://github.com/lensito"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            GITHUB ↗
+                        </a>
+                    </div>
+
+                </div>
+
+                <!-- PANEL TECNOLÓGICO -->
+
+                <div class="hero-visual reveal">
+
+                    <div class="visual-decoration decoration-one"></div>
+                    <div class="visual-decoration decoration-two"></div>
+
+                    <div class="terminal-window">
+
+                        <div class="terminal-topbar">
+
+                            <div class="terminal-dots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+
+                            <span class="terminal-title">
+                                leisi@portfolio:~
+                            </span>
+
+                            <span class="terminal-menu">•••</span>
+
+                        </div>
+
+                        <div class="terminal-content">
+
+                            <p class="terminal-command">
+                                <span>leisi@cyber</span>:~$ whoami
+                            </p>
+
+                            <h3>Leisi Valencio</h3>
+
+                            <p class="terminal-comment">
+                                # Professional identity
+                            </p>
+
+                            <div class="terminal-code">
+                                <p><span>role</span> = "Cybersecurity Student"</p>
+                                <p><span>focus</span> = "Ethical Hacking"</p>
+                                <p><span>development</span> = "Software"</p>
+                                <p><span>location</span> = "Dominican Republic"</p>
+                            </div>
+
+                            <p class="terminal-command">
+                                <span>leisi@cyber</span>:~$ interests
+                            </p>
+
+                            <div class="terminal-tags">
+                                <span>CYBERSECURITY</span>
+                                <span>DEVELOPMENT</span>
+                                <span>CTF</span>
+                                <span>TECHNOLOGY</span>
+                            </div>
+
+                            <p class="terminal-command terminal-last">
+                                <span>leisi@cyber</span>:~$
+                                <span class="terminal-cursor">_</span>
+                            </p>
+
+                        </div>
+
+                        <div class="terminal-footer">
+                            <span>● SYSTEM READY</span>
+                            <span>LEISI PORTFOLIO v1.0</span>
+                        </div>
+
+                    </div>
+
+                    <div class="floating-label label-top">
+                        <span class="floating-icon">⌘</span>
+                        <span>BUILDING THE FUTURE</span>
+                    </div>
+
+                    <div class="floating-label label-bottom">
+                        <span class="floating-status"></span>
+                        LEARNING MODE: ACTIVE
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="hero-bottom container">
+                <span>SCROLL TO EXPLORE</span>
+                <span class="scroll-line"></span>
+                <span>01 — 06</span>
+            </div>
+
+        </section>
+
+        <!-- SOBRE MÍ -->
+
+        <section class="section section-anchor" id="sobre-mi">
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+                    <span class="section-kicker">01 / SOBRE MÍ</span>
+
+                    <h2>
+                        Conoce mi lado<br>
+                        <span class="gradient-text">tecnológico.</span>
+                    </h2>
+
+                    <p>
+                        Mi historia, mis intereses y el camino
+                        que estoy construyendo en tecnología.
+                    </p>
+                </div>
+
+                <div class="about-grid">
+
+                    <article class="about-main glass-card reveal">
+
+                        <span class="card-number">01</span>
+
+                        <h3>
+                            Hola, soy <span class="text-accent">Leisi Valencio.</span>
+                        </h3>
+
+                        <p>
+                            Soy estudiante de Ciberseguridad y entusiasta
+                            del desarrollo de software. Me interesa
+                            comprender cómo funcionan los sistemas,
+                            cómo protegerlos y cómo crear aplicaciones
+                            que aporten soluciones reales.
+                        </p>
+
+                        <p>
+                            Utilizo este portafolio para documentar
+                            mi aprendizaje, compartir mis proyectos
+                            y mostrar mi evolución en el mundo tecnológico.
+                        </p>
+
+                        <p>
+                            Creo en la práctica constante, la investigación
+                            y el aprendizaje continuo como herramientas
+                            fundamentales para crecer profesionalmente.
+                        </p>
+
+                    </article>
+
+                    <div class="about-side">
+
+                        <article class="mini-card glass-card reveal">
+                            <span class="mini-icon">01</span>
+                            <h3>Aprender</h3>
+                            <p>
+                                Investigar nuevas tecnologías
+                                y fortalecer mis conocimientos.
+                            </p>
+                        </article>
+
+                        <article class="mini-card glass-card reveal">
+                            <span class="mini-icon">02</span>
+                            <h3>Experimentar</h3>
+                            <p>
+                                Practicar en laboratorios
+                                y entornos controlados.
+                            </p>
+                        </article>
+
+                        <article class="mini-card glass-card reveal">
+                            <span class="mini-icon">03</span>
+                            <h3>Construir</h3>
+                            <p>
+                                Transformar ideas en proyectos
+                                y soluciones tecnológicas.
+                            </p>
+                        </article>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ESPECIALIDADES -->
+
+        <section class="section section-dark section-anchor" id="especialidades">
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+                    <span class="section-kicker">02 / ÁREAS DE INTERÉS</span>
+
+                    <h2>
+                        Mis áreas de<br>
+                        <span class="gradient-text">especialización.</span>
+                    </h2>
+
+                    <p>
+                        Campos tecnológicos en los que estoy
+                        desarrollando conocimientos y habilidades.
+                    </p>
+                </div>
+
+                <div class="specialty-grid">
+
+                    <article class="specialty-card reveal">
+                        <div class="specialty-icon">⌘</div>
+                        <span class="specialty-index">01</span>
+                        <h3>Ciberseguridad</h3>
+                        <p>
+                            Fundamentos de seguridad informática,
+                            protección de sistemas y análisis de riesgos.
+                        </p>
+                        <span class="specialty-tag">SECURITY</span>
+                    </article>
+
+                    <article class="specialty-card reveal">
+                        <div class="specialty-icon">◈</div>
+                        <span class="specialty-index">02</span>
+                        <h3>Hacking ético</h3>
+                        <p>
+                            Estudio de vulnerabilidades y pruebas
+                            de seguridad en entornos autorizados.
+                        </p>
+                        <span class="specialty-tag">ETHICAL HACKING</span>
+                    </article>
+
+                    <article class="specialty-card reveal">
+                        <div class="specialty-icon">{ }</div>
+                        <span class="specialty-index">03</span>
+                        <h3>Desarrollo de software</h3>
+                        <p>
+                            Diseño y construcción de aplicaciones,
+                            sistemas y soluciones digitales.
+                        </p>
+                        <span class="specialty-tag">DEVELOPMENT</span>
+                    </article>
+
+                    <article class="specialty-card reveal">
+                        <div class="specialty-icon">⌁</div>
+                        <span class="specialty-index">04</span>
+                        <h3>Redes y sistemas</h3>
+                        <p>
+                            Fundamentos de redes, Linux,
+                            administración y comunicaciones.
+                        </p>
+                        <span class="specialty-tag">NETWORKING</span>
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- TECNOLOGÍAS -->
+
+        <section class="section" id="tecnologias">
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+                    <span class="section-kicker">03 / STACK TECNOLÓGICO</span>
+
+                    <h2>
+                        Tecnologías y<br>
+                        <span class="gradient-text">herramientas.</span>
+                    </h2>
+
+                    <p>
+                        Tecnologías que utilizo, estudio o estoy
+                        incorporando a mi formación.
+                    </p>
+                </div>
+
+                <div class="technology-panel glass-card reveal">
+
+                    <div class="technology-group">
+                        <h3>PROGRAMACIÓN</h3>
+
+                        <div class="technology-list">
+                            <span>C#</span>
+                            <span>Python</span>
+                            <span>JavaScript</span>
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                        </div>
+                    </div>
+
+                    <div class="technology-group">
+                        <h3>FRAMEWORKS Y DESARROLLO</h3>
+
+                        <div class="technology-list">
+                            <span>.NET</span>
+                            <span>ASP.NET Core</span>
+                        </div>
+                    </div>
+
+                    <div class="technology-group">
+                        <h3>BASES DE DATOS</h3>
+
+                        <div class="technology-list">
+                            <span>SQL Server</span>
+                            <span>SQL</span>
+                        </div>
+                    </div>
+
+                    <div class="technology-group">
+                        <h3>SISTEMAS Y HERRAMIENTAS</h3>
+
+                        <div class="technology-list">
+                            <span>Linux</span>
+                            <span>Git</span>
+                            <span>GitHub</span>
+                            <span>Visual Studio</span>
+                        </div>
+                    </div>
+
+                    <div class="technology-note">
+                        <span>ⓘ</span>
+                        Las tecnologías mostradas representan
+                        herramientas de trabajo y aprendizaje.
+                        El nivel de dominio se irá documentando
+                        conforme avance mi formación.
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- PROYECTOS -->
+
+        <section class="section section-dark section-anchor" id="proyectos">
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+                    <span class="section-kicker">04 / TRABAJO DESTACADO</span>
+
+                    <h2>
+                        Proyectos que<br>
+                        <span class="gradient-text">construyen mi camino.</span>
+                    </h2>
+
+                    <p>
+                        Desarrollo de software, prácticas de
+                        ciberseguridad e investigación tecnológica.
+                    </p>
+                </div>
+
+                <div class="project-filters reveal"
+                     role="group"
+                     aria-label="Filtrar proyectos">
+
+                    <button class="filter-btn active"
+                            type="button"
+                            data-filter="all"
+                            aria-pressed="true">
+                        Todos
+                    </button>
+
+                    <button class="filter-btn"
+                            type="button"
+                            data-filter="software"
+                            aria-pressed="false">
+                        Software
+                    </button>
+
+                    <button class="filter-btn"
+                            type="button"
+                            data-filter="cybersecurity"
+                            aria-pressed="false">
+                        Ciberseguridad
+                    </button>
+
+                    <button class="filter-btn"
+                            type="button"
+                            data-filter="ctf"
+                            aria-pressed="false">
+                        CTF
+                    </button>
+
+                    <button class="filter-btn"
+                            type="button"
+                            data-filter="automation"
+                            aria-pressed="false">
+                        Automatización
+                    </button>
+
+                </div>
+
+                <div class="projects-grid" id="projectsGrid">
+
+                    <!-- PROYECTO 1 -->
+
+                    <article class="project-card reveal"
+                             data-category="software">
+
+                        <div class="project-visual dental-visual">
+                            <span class="project-visual-icon">✚</span>
+                            <span class="project-visual-label">SOFTWARE SYSTEM</span>
+                            <span class="project-visual-code">LV / 001</span>
+                        </div>
+
+                        <div class="project-body">
+
+                            <div class="project-meta">
+                                <span class="project-category">DESARROLLO</span>
+                                <span class="project-status">
+                                    EN DESARROLLO
+                                </span>
+                            </div>
+
+                            <h3>LV DENTAL SOFT</h3>
+
+                            <p>
+                                Sistema de gestión para clínicas
+                                odontológicas, desarrollado con
+                                arquitectura organizada y SQL Server.
+                            </p>
+
+                            <div class="project-tags">
+                                <span>C#</span>
+                                <span>ASP.NET Core</span>
+                                <span>SQL Server</span>
+                            </div>
+
+                            <a href="https://github.com/lensito"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               class="project-link">
+                                Explorar GitHub <span>↗</span>
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                    <!-- PROYECTO 2 -->
+
+                    <article class="project-card reveal"
+                             data-category="cybersecurity">
+
+                        <div class="project-visual security-visual">
+                            <span class="project-visual-icon">⌘</span>
+                            <span class="project-visual-label">SECURITY PROJECT</span>
+                            <span class="project-visual-code">CS / 002</span>
+                        </div>
+
+                        <div class="project-body">
+
+                            <div class="project-meta">
+                                <span class="project-category">CIBERSEGURIDAD</span>
+                                <span class="project-status">
+                                    PROYECTO ACADÉMICO
+                                </span>
+                            </div>
+
+                            <h3>Sistema de auditoría de ciberseguridad</h3>
+
+                            <p>
+                                Proyecto de desarrollo orientado a la
+                                gestión de auditorías, empresas y registros
+                                de información.
+                            </p>
+
+                            <div class="project-tags">
+                                <span>C#</span>
+                                <span>.NET</span>
+                                <span>SQL Server</span>
+                            </div>
+
+                            <a href="https://github.com/lensito"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               class="project-link">
+                                Explorar GitHub <span>↗</span>
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                    <!-- PROYECTO 3 -->
+
+                    <article class="project-card reveal"
+                             data-category="ctf">
+
+                        <div class="project-visual ctf-visual">
+                            <span class="project-visual-icon">⌖</span>
+                            <span class="project-visual-label">CTF RESEARCH</span>
+                            <span class="project-visual-code">CT / 003</span>
+                        </div>
+
+                        <div class="project-body">
+
+                            <div class="project-meta">
+                                <span class="project-category">CTF</span>
+                                <span class="project-status">
+                                    EN PREPARACIÓN
+                                </span>
+                            </div>
+
+                            <h3>CTF & Write-ups</h3>
+
+                            <p>
+                                Espacio destinado a documentar retos,
+                                metodologías de resolución y aprendizajes
+                                de laboratorios autorizados.
+                            </p>
+
+                            <div class="project-tags">
+                                <span>CTF</span>
+                                <span>Linux</span>
+                                <span>Research</span>
+                            </div>
+
+                            <a href="https://github.com/lensito"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               class="project-link">
+                                Explorar GitHub <span>↗</span>
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                    <!-- PROYECTO 4 -->
+
+                    <article class="project-card reveal"
+                             data-category="automation">
+
+                        <div class="project-visual automation-visual">
+                            <span class="project-visual-icon">{ }</span>
+                            <span class="project-visual-label">AUTOMATION</span>
+                            <span class="project-visual-code">PY / 004</span>
+                        </div>
+
+                        <div class="project-body">
+
+                            <div class="project-meta">
+                                <span class="project-category">PROGRAMACIÓN</span>
+                                <span class="project-status">
+                                    PLANIFICADO
+                                </span>
+                            </div>
+
+                            <h3>Python & Automation</h3>
+
+                            <p>
+                                Espacio para futuras herramientas,
+                                scripts y automatizaciones orientadas
+                                a resolver problemas tecnológicos.
+                            </p>
+
+                            <div class="project-tags">
+                                <span>Python</span>
+                                <span>Automation</span>
+                                <span>Scripts</span>
+                            </div>
+
+                            <a href="https://github.com/lensito"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               class="project-link">
+                                Explorar GitHub <span>↗</span>
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+                <p class="projects-note">
+                    Los proyectos indicados como planificados o en
+                    preparación todavía no representan trabajos publicados.
+                </p>
+
+                <div class="projects-footer">
+                    <a href="https://github.com/lensito"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="btn btn-secondary">
+                        Ver perfil completo de GitHub ↗
+                    </a>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- FORMACIÓN -->
+
+        <section class="section section-anchor" id="formacion">
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+                    <span class="section-kicker">05 / FORMACIÓN</span>
+
+                    <h2>
+                        Aprendizaje<br>
+                        <span class="gradient-text">continuo.</span>
+                    </h2>
+
+                    <p>
+                        Mi camino de formación y crecimiento profesional.
+                    </p>
+                </div>
+
+                <div class="learning-card glass-card reveal">
+
+                    <div class="learning-marker">
+                        <span></span>
+                    </div>
+
+                    <div class="learning-content">
+
+                        <span class="learning-date">FORMACIÓN ACTUAL</span>
+
+                        <h3>Estudiante de Ciberseguridad</h3>
+
+                        <p>
+                            Enfocado en adquirir conocimientos
+                            sobre seguridad informática, redes,
+                            sistemas, análisis de vulnerabilidades
+                            y protección de infraestructuras.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>Cybersecurity</span>
+                            <span>Networking</span>
+                            <span>Linux</span>
+                            <span>Security Fundamentals</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="learning-note">
+                    <span>+</span>
+                    Aquí incorporaremos tus instituciones,
+                    cursos, certificaciones y fechas verificables
+                    conforme nos proporciones esa información.
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- CONTACTO -->
+
+        <section class="section section-contact section-anchor"
+                 id="contacto">
+
+            <div class="container">
+
+                <div class="contact-panel reveal">
+
+                    <span class="section-kicker">06 / CONTACTO</span>
+
+                    <h2>
+                        Construyamos algo<br>
+                        <span class="gradient-text">extraordinario.</span>
+                    </h2>
+
+                    <p>
+                        Estoy construyendo mi camino en tecnología.
+                        Puedes conocer mis proyectos, seguir mi evolución
+                        y conectar conmigo a través de GitHub.
+                    </p>
+
+                    <a href="https://github.com/lensito"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="btn btn-primary">
+                        Conectar en GitHub ↗
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+
+    <footer class="site-footer">
+
+        <div class="container footer-content">
+
+            <a href="#inicio" class="brand footer-brand">
+                <span class="brand-icon">&lt;/&gt;</span>
+                LEISI<span class="text-accent">.</span>
             </a>
+
+            <p>
+                Diseñado y desarrollado por
+                <strong>Leisi Valencio</strong>.
+            </p>
+
+            <p class="footer-copy">
+                © <span id="currentYear"></span>
+                Leisi Valencio. Todos los derechos reservados.
+            </p>
+
+            <a href="#inicio" class="back-to-top" aria-label="Volver al inicio">
+                ↑
+            </a>
+
         </div>
-    </section>
 
-</main>
-
-<footer class="footer">
-    <p>© <span id="year"></span> Leisi Valencio.</p>
-    <p>Cybersecurity & Software Development.</p>
-    <a href="#inicio">Volver arriba ↑</a>
-</footer>
+    </footer>
 
 </body>
 </html>
