@@ -192,9 +192,29 @@
             <p>Aplicaciones, investigaciones y desarrollos tecnológicos.</p>
         </div>
 
+        
+<div class="project-filters" aria-label="Filtrar proyectos">
+    <button class="filter-btn active" data-filter="all">
+        Todos
+    </button>
+
+    <button class="filter-btn" data-filter="software">
+        Software
+    </button>
+
+    <button class="filter-btn" data-filter="cybersecurity">
+        Ciberseguridad
+    </button>
+
+    <button class="filter-btn" data-filter="ctf">
+        CTF
+    </button>
+</div>
+
+        
         <div class="projects-grid">
 
-            <article class="project-card">
+            <article class="project-card" data-category="software">
                 <div class="project-top">
                     <span class="project-icon">🦷</span>
                     <span class="project-status">En desarrollo</span>
@@ -219,7 +239,7 @@
                 </a>
             </article>
 
-            <article class="project-card">
+            <article class="project-card" data-category="cybersecurity">
                 <div class="project-top">
                     <span class="project-icon">🛡️</span>
                     <span class="project-status">En construcción</span>
@@ -244,7 +264,7 @@
                 </a>
             </article>
 
-            <article class="project-card">
+            <article class="project-card" data-category="ctf">
                 <div class="project-top">
                     <span class="project-icon">🎯</span>
                     <span class="project-status">En construcción</span>
