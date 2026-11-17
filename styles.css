@@ -1777,9 +1777,7 @@ ul {
         font-size: 32px;
     }
 
-}
-
-/* CORRECCIÓN DE EMERGENCIA: mantener visible el contenido */
+   /* CORRECCIÓN DE EMERGENCIA: mantener visible el contenido */
 .reveal {
     opacity: 1 !important;
     visibility: visible !important;
@@ -1797,3 +1795,6 @@ main section,
 #contenido {
     visibility: visible;
 }
+}
+
+
